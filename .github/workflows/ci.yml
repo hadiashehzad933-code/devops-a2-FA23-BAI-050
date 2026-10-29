@@ -19,6 +19,7 @@ jobs:
       - name: Check portfolio files
         run: |
           test -f index.html
+          test -f file-that-does-not-exist.html
           test -f style.css
           test -f Dockerfile
           grep -qi "<html" index.html
